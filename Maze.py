@@ -46,12 +46,12 @@ def mouse_cursor(x, y):
 h = turtle.Turtle()
 hurdles = []
 
-xcors = [i for i in range(-460, 480, 60)]  # Updated for new width
-ycors = [j for j in range(-220, 210, 60)]
+xcors = [i for i in range(-495, 480, 60)]  # Updated for new width
+ycors = [j for j in range(-230, 210, 60)]
 
 def hurdle():
     screen.tracer(0)
-    for i in range(100):
+    for i in range(120):
         h = turtle.Turtle()
         h.penup()
         h.color("black")
