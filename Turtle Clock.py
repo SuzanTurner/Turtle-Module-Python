@@ -12,6 +12,22 @@ label.goto(-90,140)
 label.write("Turtle Clock", font = ("Courier", 20, "bold"))
 label.hideturtle()
 
+def design():
+    screen.tracer(0)
+    triangle = ((0,0), (0,70), (70,0))
+    screen.register_shape("triangle", triangle)
+    d = turtle.Turtle()
+    d.color("#3D5A80")
+    d.shape("triangle")
+    d.penup()
+    d.goto(-225,200)
+    d.stamp()
+    d.setheading(180)
+    d.goto(225,-190)
+    screen.update()
+
+design()
+
 def border():
     screen.tracer(0)
     b = turtle.Turtle()
